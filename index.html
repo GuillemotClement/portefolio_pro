@@ -10,9 +10,10 @@
     <script src="./bootstrap-5.3/js/bootstrap.bundle.js" defer></script>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark ">
-        <div class="container-fluid bg-dark fixed-top p-2">
+    <!-- HEADER -->
+    <!-- TODO: coller cette putain de navbar en haut -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark">
+        <div class="container-fluid bg-dark p-2">
             <a class="navbar-brand text-white text-uppercase" href="#">
                 <img id="imgeProfil" src="./ressource/img/imageProfil.png" alt="image profil" width="50" height="48" class="d-inline-block align-text-center m-1">
                 Clément Guillemot
@@ -44,9 +45,137 @@
         </div>
     </nav>
 
+    <!-- TODO: faire section Hero -->
+    <!-- TODO: vérifier les classe -->
+        <!-- TODO: ajouter un script qui permet d'indiquer automatiquement depuis combien de temps je programe -->
+    <div class="container py-4 ">
+        <!-- TODO: vérifier les classe -->
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <!-- TODO: vérifier les classe -->
+            <div class="container-fluid py-5 bg-image text-white" style="background-image: url('./ressource/img/darker_background_image_hero.png')">
+                <!-- TODO: vérifier les classe -->
+                <h1 class="text-uppercase">Clément Guillemot</h1>
+                <!-- TODO: ajouter le contenu texte -->
+                <!-- TODO: vérifier les classe -->
+                <p class="font-italic">Développeur web passionné, dédié à créer des expériences en ligne captivantes. Mon approche allie créativité et fonctionnalité pour concevoir des sites web mémorables et intuitifs.</p>
+                <!-- TODO: faire que le bouton redirige vers la page contact -->
+                <!-- TODO: vérifier les classe -->
+                <div class="text-center mt-md-3">
+                    <button class="btn btn-primary btn-lg text-uppercase opacity-100" type="button"><a href="contact.html" class="text-light text-decoration-none">Me contacter</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- SECTION PROJET -->
+<!-- TODO: Toujours pas ok pour les card sur écran moyen -->
+<!-- TODO: toujours pas ok pour les couleurs des titres envisager de nodifier la couleur -->
+    <div class="container">
+        <h2 class="display-3 text-uppercase text-center fw-bold text-primary">projets</h2>
+        <div class="row row-cols-1 row-cols-md3 g-4">
+            <div class="col">
+                <div class="card d-inline-flex w-25-md">
+                    <img src="./ressource/img/projet1.jpg" alt="image projet 1" class="card-img-top img-thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-title text-uppercase">Projet 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus eaque maxime!</p>
+                        <a href="#" class="card-link">Lien vers le projet</a>
+                    </div>
+                    <div class="card-footer">
+                        <!-- TODO: ajouter un script qui récupère la date de la dernière maj pour automatiser la dernière fois qu'une mise à jour est effectué -->
+                        <small class="text-body-secondary">Last updated 3 min ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card w-25-md">
+                    <img src="./ressource/img/projet2.jpg" alt="image projet 2" class="card-img-top img-thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-title text-uppercase">Projet 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus eaque maxime!</p>
+                        <a href="#" class="card-link">Lien vers le projet</a>
+                    </div>
+                    <div class="card-footer">
+                        <!-- TODO: ajouter un script qui récupère la date de la dernière maj pour automatiser la dernière fois qu'une mise à jour est effectué -->
+                        <small class="text-body-secondary">Last updated 3 min ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card w-25-md">
+                    <img src="./ressource/img/projet3.jpg" alt="image projet 3" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title text-uppercase">Projet 3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus eaque maxime!</p>
+                        <a href="#" class="card-link">Lien vers le projet</a>
+                    </div>
+                    <div class="card-footer">
+                        <!-- TODO: ajouter un script qui récupère la date de la dernière maj pour automatiser la dernière fois qu'une mise à jour est effectué -->
+                        <small class="text-body-secondary">Last updated 3 min ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <hr>
 
+    <!-- SKILLS -->
+    <!-- TODO: reduire la taille police des sous titre sur petit écran -->
+    <!-- TODO: augmenter taille des icones -->
+    <div id="skills" class="container ">
+        <h2 class="display-3 text-uppercase text-center fw-bold text-primary">compétences</h2>
+        <div class="d-flex justify-content-around">
+            <div class="row w-25">
+                <h3 class="display-6 text-uppercase text-center">Front-End</h3>
+                <ul class="list-group">
+                    <li class="list-group-item"><i class="fa-brands fa-html5"></i></li>
+                    <li class="list-group-item"><i class="fa-brands fa-css3-alt"></i></li>
+                    <li class="list-group-item"><i class="fa-brands fa-bootstrap"></i></li>
+                    <li class="list-group-item"><i class="fa-brands fa-react"></i></li>
+                </ul>
+            </div>
+            <div class="row w-25">
+                <h3 class="display-6 text-uppercase text-center">Back-End</h3>
+                <ul class="list-group">
+                    <li class="list-group-item"><i class="fa-brands fa-php"></i></li>
+                    <!-- TODO: ajouter logo express js -->
+                    <li class="list-group-item"><i class="fa">expressjs</i></li>
+                    <!-- TODO: ajouter logo postgreSQL -->
+                    <li class="list-group-item"><i class="fa">postgreSQL</i></li>
+                    <!-- TODO: trouver un dernier logo à placer  -->
+                    <li class="list-group-item"><i class="fa">a trouver</i></li>
+                </ul>
+            </div>
+            <div class="row w-25">
+                <h3 class="display-6 text-uppercase text-center">Other</h3>
+                <ul class="list-group">
+                    <li class="list-group-item"><i class="fa-brands fa-figma"></i></li>
+                    <li class="list-group-item"><i class="fa-brands fa-github"></i></li>
+                    <!-- TODO: trouver logo visual studio -->
+                    <li class="list-group-item"><i class="fa">visual studio</i></li>
+                    <li class="list-group-item"><i class="fa-brands fa-linux"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <!-- FOOTER -->
+                        <!-- TODO: Ajouter les liens vers réseaux sociaux -->
+                        <!-- TODO: Aéliorer le placement des élement (padding dégueulasse) -->
+                        <!-- TODO: regarder pour centrer verticalmeent les deux éléments -->
+    <div class="container bg-dark">
+        <footer class="bg dark">
+            <ul id="list_logo">
+                <li class=""><a href=""><i class="fa-brands fa-github fa-2x text-white"></i></a></li>
+                <li class=""><a href=""><i class="fa-brands fa-linkedin fa-2x text-white"></i></i></a></li>
+                <li class=""><a href=""><i class="fa-solid fa-envelope fa-2x text-white"></i></a></li>
+            </ul>
+            <div>
+                <p class="text-light">Copyright &copy;<script>document.write(new Date().getFullYear());</script>All rights reserved </p>
+                <p class="text-light">Portefolio made with <i class="fa fa-heart text-danger" aria-hidden="true"></i> from Breizh</p>
+            </div>
+        </footer>
+    </div>
+
 </body>
 </html>
-
